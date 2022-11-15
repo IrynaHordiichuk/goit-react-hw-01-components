@@ -1,9 +1,9 @@
 
-import { Heading, Section, Container, Profile, FriendList, Statistics, TransactionHistory } from 'components';
+import { Section, Container, Profile, Statistics } from 'components';
 
 import data from 'data/data.json';
-import friends from 'data/friends.json';
-import transactions from 'data/transactions.json';
+// import friends from 'data/friends.json';
+// import transactions from 'data/transactions.json';
 import user from 'data/user.json';
 
 export const App = () => {
