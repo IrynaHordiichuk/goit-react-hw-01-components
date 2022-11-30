@@ -24,14 +24,13 @@ export const StatList = styled.ul`
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    
 `;
 
 export const StatItem = styled.li`
   display: flex;
   align-items: center;
   padding: 30px;
-  /* background: ${props => props.theme.colors.accent}; */
+  flex-basis: calc((100% - 4 * 0px) / 5);
   background: ${ function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 }}

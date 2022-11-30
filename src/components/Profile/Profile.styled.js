@@ -21,7 +21,7 @@ export const ProfileDescribtion = styled.div`
 `;
 
 export const ProfileImage = styled.img`
-  border:  1px solid rgb(34, 34, 34);
+  border: 1px solid rgb(34, 34, 34);
   object-fit: cover;
   border-radius: 50%;
 `;
@@ -41,24 +41,19 @@ export const ProfileName = styled.p`
   margin-bottom: 0;
 `;
 
-
 export const StatsList = styled.ul`
-  background-color: ${props => props.theme.colors.white};
+  display: flex;
   border-radius: 0 0 ${props => props.theme.spacing(3)};
-  padding: ${props => props.theme.spacing(3)} ${props => props.theme.spacing(5)};
-  display: grid;
-  row-gap: ${props => props.theme.spacing(2)};
 `;
 
 export const StatsItem = styled.li`
-  display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  padding: 10px 30px 10px 10px;
-  overflow: hidden;
+  flex-basis: calc((100% - 2 * 0px) / 3);
+  padding: 10px;
   box-shadow: ${props => props.theme.shadows.medium};
   background-color: ${props => props.theme.colors.white};
-  
 `;
 
 export const StatsSpanText = styled.span`
