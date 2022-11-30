@@ -8,7 +8,7 @@ import {
 export const FriendListItem = ({ avatar, isOnline, name }) => {
   return (
     <FriendItem>
-      <FriendStatus>{isOnline}</FriendStatus>
+      <FriendStatus isOnline={isOnline}></FriendStatus>
       <FriendAvatar src={avatar} alt="User avatar" width="48" />
       <FriendName>{name}</FriendName>
     </FriendItem>

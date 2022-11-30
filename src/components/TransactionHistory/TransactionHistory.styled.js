@@ -10,9 +10,8 @@ export const BaseTable = styled.table`
 `;
 
 export const THead = styled.thead`
-  color: ${({ theme }) => theme.colors.white};
-  background-color: ${({ theme }) => theme.colors.green};
-  text-transform: uppercase;
+  /* color: ${({ theme }) => theme.colors.dark}; */
+  /* text-transform: uppercase; */
 `;
 
 export const Tr = styled.tr`
@@ -23,16 +22,18 @@ export const Tr = styled.tr`
 
 export const Th = styled.th`
   padding: 10px;
+  background-color: ${({ theme }) => theme.colors.accent};
   border: 1px solid ${({ theme }) => theme.colors.gray};
-  color: ${({ theme }) => theme.colors.white};
+  color: ${({ theme }) => theme.colors.light};
 `;
 
 export const TBody = styled.tbody`
-  background-color: pink;
+  background-color: ${({theme}) => theme.colors.lightGray}
 `;
 
 export const Td = styled.td`
   padding: 10px;
-  border: 1px solid ${({ theme }) => theme.colors.gray};
+  border-right: 1px solid ${({ theme }) => theme.colors.gray};
+  border-left: 1px solid ${({ theme }) => theme.colors.gray};
   color: ${({ theme }) => theme.colors.dark};
 `;
