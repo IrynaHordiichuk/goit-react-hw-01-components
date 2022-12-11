@@ -22,7 +22,7 @@ export const TransactionHistory = ({ transactions }) => {
       <TBody>
         {transactions.map(({ id, type, amount, currency }) => (
           <Tr key={id}>
-            <Td>{type}</Td>
+            <Td>{type.toUpperCase()}</Td>
             <Td>{amount}</Td>
             <Td>{currency}</Td>
           </Tr>

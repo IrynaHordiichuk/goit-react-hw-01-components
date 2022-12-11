@@ -12,13 +12,11 @@ import {
 } from './Profile.styled';
 
 export const Profile = ({
-  user: {
-    username,
-    tag,
-    location,
-    avatar,
-    stats: { followers, views, likes },
-  },
+  username,
+  tag,
+  location,
+  avatar,
+  stats: { followers, views, likes },
 }) => {
   // const { username, tag, location, avatar } = props;
   // const {followers, views, likes} = props.stats;
@@ -26,7 +24,12 @@ export const Profile = ({
   return (
     <ProfileDiv>
       <ProfileDescribtion>
-        <ProfileImage src={avatar} size="300px" />
+        <ProfileImage
+          src={avatar}
+          alt="User picture"
+          widht={150}
+          height={150}
+        />
         <ProfileName>{username}</ProfileName>
         <ProfileText>{tag}</ProfileText>
         <ProfileText>{location}</ProfileText>
